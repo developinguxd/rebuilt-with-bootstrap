@@ -1,0 +1,26 @@
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_variables';
+
+/* Generate multiple margins and padding sizes  */
+$gapsize: $line-height-computed;
+$positions: left right top bottom;
+
+@each $position in $positions {
+  @if $position == left {
+    $name: l;
+  } @else if $position == right {
+    $name: r;
+  } @else if $position == top {
+    $name: t;
+  } @else if $position == bottom {
+    $name: b;
+  }
+
+  @for $i from 1 through 5 {
+    .m#{$name}#{$i} {
+      margin-#{$position}: $gapsize * $i;
+    }
+    .p#{$name}#{$i} {
+      padding-#{$position}: $gapsize * $i;
+    }
+  }
+}
