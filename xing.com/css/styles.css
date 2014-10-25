@@ -1,0 +1,99 @@
+/*
+  Element styles
+ */
+html, body {
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+/*
+  Text helpers
+ */
+.normal {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/*
+  Vertical margin helpers
+ */
+
+.mb-none {
+  margin-bottom: 0;
+}
+
+.mt-xs {
+  margin-top: 15px;
+}
+
+.mb-xs {
+  margin-bottom: 15px;
+}
+
+.mb-s {
+  margin-bottom: 30px;
+}
+
+.mt-s {
+  margin-top: 30px;
+}
+
+.mb-m {
+  margin-bottom: 45px;
+}
+
+.mt-m {
+  margin-top: 45px;
+}
+
+.mb-l {
+  margin-bottom: 60px;
+}
+
+.mt-l {
+  margin-top: 60px;
+}
+
+/*
+  Divider border helpers
+ */
+.divider-bottom {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+/*
+  Modules
+ */
+.main-header {
+  background-color: #006567;
+  height: 70px;
+}
+
+.vertical-nav {
+  background-color: #dedede;
+  height: 600px;
+}
+
+.main-content {
+  background-color: #fff;
+}
+
+.main-aside {
+  background-color: #fff;
+  border-left: 8px solid #f0f0f0;
+  height: 100px;
+}
+
+.stream-filter__link {
+  line-height: 34px;
+}
+
+.stream__icon {
+  width: 60px;
+  font-size: 17px;
+}
+
+

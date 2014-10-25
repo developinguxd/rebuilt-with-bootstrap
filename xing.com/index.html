@@ -5,7 +5,7 @@
 
     <!-- Don't show a scaled down website in small devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>XING – Startpage</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -20,11 +20,85 @@
       </nav>
     </header>
 
-    <main>
-      <section class="main-content">
-      </section>
-      <aside class="main-aside">
-      </aside>
+    <main class="container">
+      <div class="row">
+        <section class="vertical-nav col-md-1">
+        </section>
+
+        <section class="main-content col-md-7">
+          <!-- Tab navigation -->
+          <ul class="nav nav-tabs mt-s" role="tablist">
+            <li class="active"><a href="#">Neuigkeiten</a></li>
+            <li><a href="#">Postfach</a></li>
+            <li><a href="#">Kontakte</a></li>
+            <li><a href="#">Kontakte finden</a></li>
+          </ul>
+
+          <!-- Create post -->
+          <section class="row mt-m">
+            <div class="col-md-2">
+              <img src="holder.js/100%x84/gray" alt="">
+            </div>
+            <div class="col-md-10">
+              <h1 class="h3">Neuen Beitrag erstellen</h1>
+              <input class="form-control" placeholder="Was gibts Neues?" type="text">
+            </div>
+          </section>
+
+          <!-- Stream filter -->
+          <section class="row mt-s divider-bottom">
+            <div class="col-md-3 col-md-offset-6">
+              <a class="stream-filter__link" href="#">Ausgeblendet (8)</a>
+            </div>
+            <div class="col-md-3 mb-s">
+              <select name="" id="" class="form-control">
+                <option value="">Alle Einträge</option>
+                <option value="">Statusmeldungen</option>
+                <option value="">Gruppen</option>
+                <option value="">Profilmeldungen</option>
+              </select>
+            </div>
+          </section>
+
+          <!-- Stream -->
+          <section>
+
+            <!-- Stream element -->
+            <section class="mt-s mb-s">
+
+              <div class="row divider-bottom">
+                <div class="col-md-2">
+                  <img src="holder.js/100%x84/gray" alt="">
+                </div>
+
+                <div class="col-md-10">
+                  <h1 class="normal"><a href="#">John Doe</a> hat einen neuen Kontakt:</h1>
+                  <time class="text-muted" datetime="2014-10-25 19:56">Heute 19:56</time>
+
+                  <div class="row mt-s">
+                    <div class="col-md-4"><img src="holder.js/100%x160/gray" alt=""></div>
+                    <div class="col-md-8">
+                    <div class="lead mb-none"><a href="#">Jane Doe</a></div>
+                    <div>Job description</div>
+                    <div class="text-muted mb-m">Company</div>
+                    <button class="btn btn-primary">Hinzufügen</button>
+                    </div>
+                  </div>
+                  <div class="mt-xs mb-xs">
+                    <span class="stream__icon glyphicon glyphicon-star"></span>
+                    <span class="stream__icon glyphicon glyphicon-envelope"></span>
+                    <span class="stream__icon glyphicon glyphicon-thumbs-up"></span>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <aside class="main-aside col-md-4">
+        </aside>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -33,7 +107,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-2.1.1.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.js"></script>
+
+    <!-- holder.js for image placeholders. @see: https://github.com/imsky/holder -->
+    <script src="js/holder.js"></script>
   </body>
 </html>
